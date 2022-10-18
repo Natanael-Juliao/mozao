@@ -1,38 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <meta charset="UTF-8">
-<head>OI</head>
-<script>
+    <head>
+        <title>Mozao</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial scale=1">
+        <link rel="stylesheet" href="Projeto Mozão.css">
+    </head>
+    <body>
+        <script>
 
-    var loginCadastrado = "Natanael";
-    var senhaCadastrada = "123456";
+                var loginCadastrado = "Natanael";
+                var senhaCadastrada = "123456";
 
-    var maximoTentativas = 3;
-    var tentativaAtual = 1;
+                var maximoTentativas = 3;
+                var tentativaAtual = 1;
 
-    while(tentativaAtual <= maximoTentativas) {
+                while(tentativaAtual <= maximoTentativas) {
 
-        var loginInformado = prompt("Informe seu login");
-        var senhaInformada = prompt("Informe sua senha");
+                    var loginInformado = prompt("Informe seu login");
+                    var senhaInformada = prompt("Informe sua senha");
 
-        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+                    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
 
-            alert("Bem-vindo ao sistema, " + loginInformado);
+                        alert("Bem-vindo ao sistema, " + loginInformado);
 
-            tentativaAtual = maximoTentativas; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
+                        tentativaAtual = maximoTentativas; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
 
-        } else {
+                    } else {
 
-            if (tentativaAtual == 3) {
-                alert("Número permitido de tentativas ultrapassado!");
-            } else {
-                alert("Login inválido. Tente novamente");
-            }
-        }
+                        if (tentativaAtual == 3) {
+                            alert("Número permitido de tentativas ultrapassado!");
+                        } else {
+                            alert("Login inválido. Tente novamente");
+                        }
+                    }
 
-       // vai para a próxima tentativa
-        tentativaAtual = tentativaAtual +1  
-    }
+                // vai para a próxima tentativa
+                    tentativaAtual = tentativaAtual +1  
+                }
 
-</script>
+        </script>
+    </body>
 </html>
